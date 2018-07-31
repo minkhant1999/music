@@ -1,154 +1,130 @@
+<!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+    #mySidenav a {
+        position: absolute;
+        left: -80px;
+        transition: 0.3s;
+        padding: 15px;
+        width: 100px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        border-radius: 0 5px 5px 0;
+    }
+    
+    #mySidenav a:hover {
+        left: 0;
+    }
+    
+    #home {
+        top: 20px;
+        background-color: #555;
+    }
+    
+    #blog {
+        top: 80px;
+        background-color: #600;
+    }
+    
+    #projects {
+        top: 140px;
+        background-color: #700;
+    }
+    
+    #contact {
+        top: 200px;
+        background-color: #900;
+    }
+</style>
 
-<head>
-    <meta http-equiv="Cache-Control" content="max-age=0" />
-    <meta http-equiv="Cache-Control" content="no-cache" />
-    <meta http-equiv="pragma" pragma="no-cache" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My name is K Miruz
-    </title>
-    <link href="mickeywatchcss.css" type="text/css" rel="stylesheet" </head>
-    <style>
-        #header {
-            background-color: #000000;
-            color: rgb(255, 255, 255);
-            font-size: 30px;
-            text-align: center;
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="home">Home</a>
+        <a href="songs.html" id="blog">Songs</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </div>
+
+    <!-- Navigation 
+    <nav class="w3-bar w3-black">
+        <a href="news.png" class="w3-button w3-bar-item">Home</a>
+        <a href="#band" class="w3-button w3-bar-item">Band</a>
+        <a href="#tour" class="w3-button w3-bar-item">Tour</a>
+        <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+    </nav>-->
+
+    <!-- Slide Show -->
+    <section>
+        <img class="mySlides" src="myanmar.jpg" style="width:100%">
+        <img class="mySlides" src="techno.jpg" style="width:100%">
+        <img class="mySlides" src="unstop.jpg" style="width:100%">
+    </section>
+
+    <!-- Band Description -->
+    <section class="w3-container w3-center w3-content" style="max-width:600px">
+        <h2 class="w3-wide">THE BAND</h2>
+        <p class="w3-opacity"><i>We love music</i></p>
+        <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
+    <!-- Band Members -->
+    <section class="w3-row-padding w3-center w3-light-grey">
+        <article class="w3-third">
+            <p>John</p>
+            <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+            <p>John is the smartest.</p>
+        </article>
+        <article class="w3-third">
+            <p>Paul</p>
+            <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+            <p>Paul is the prettiest.</p>
+        </article>
+        <article class="w3-third">
+            <p>Ringo</p>
+            <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+            <p>Ringo is the funniest.</p>
+        </article>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+        <a href="#"><i class="fa fa-facebook-official"></i></a>
+        <a href="#"><i class="fa fa-pinterest-p"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-flickr"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <p class="w3-medium">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+    </footer>
+
+    <script>
+        // Automatic Slideshow - change image every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 3000);
         }
-        
-        body {
-            background-image: url(bg.jpg);
-            background-size: cover;
-            font-family: verdana;
-            font-size: 13px;
-        }
-        
-        body a {
-            text-decoration: none;
-        }
-        
-        .small_image {
-            width: 100px;
-            float: left;
-        }
-        
-        #wrapper {
-            width: 100%;
-            max-width: 1000px;
-            margin-left: 200px;
-            margin-right: 200px;
-        }
-        
-        #song {
-            width: 200px;
-            height: 300px;
-            background-color: #335BFF;
-            margin: 20px;
-            padding: 4px;
-            color: rgb(255, 255, 255);
-            float: left;
-        }
-        
-        .hinh {
-            width: 100%;
-        }
-        
-        .next {
-            background-color: #4CAF50;
-            color: #ffffff;
-            border-color: #4CAF50;
-            display: inline-block;
-            padding: 8px 16px;
-            vertical-align: middle;
-            overflow: hidden;
-            text-decoration: none;
-            color: inherit;
-            background-color: inherit;
-            text-align: center;
-            cursor: pointer;
-            white-space: nowrap;
-            font-size: 17px;
-            border: 1px solid #cccccc;
-            float: right;
-            float: inline end;
-        }
-    </style>
+    </script>
 
-    <body>
-        <div id="wrapper">
-            <div id="header">
-                <img src="header.jpg" style="height:250px;float:left;" />
-
-
-
-                <div style="font-size: 60px;">Music from the heart can be heard by the universe!</div>
-                <br style="clear:both;" />
-            </div>
-            <a href="wawa.html">
-                <div id="song">
-                    <img src="wawa.jpg" class="hinh" /></br>
-                    </br>
-                    Song: Wawa </br>
-                    </br>
-                    Artist: Party Favor </br>
-                    </br>
-                    Remixer: <b>K Miruz</b> & <b>Hashtag in house</b>
-
-
-
-                </div>
-            </a>
-
-            <a href="myanmar.html">
-                <div id="song">
-                    <img src="myanmar.jpg" class="hinh" /></br>
-                    </br>
-                    Song: Golden Land </br>
-                    </br>
-                    Artist: <b>K Miruz </b></br>
-
-                </div>
-            </a>
-
-            <a href="techno.html">
-                <div id="song">
-                    <img src="techno.jpg" class="hinh" /></br>
-                    </br>
-                    Song: Time for the techno </br>
-                    </br>
-                    Artist: <b>Carnage </b>vs <b>Vinai</b></br>
-                    Remixer: <b>K Miruz</b>
-
-                </div>
-            </a>
-
-            <a href="unstop.html">
-                <div id="song">
-                    <img src="unstop.jpg" class="hinh" /></br>
-                    </br>
-                    Song: Unstoppable </br>
-                    </br>
-                    Artist: <b>Tonyjunior </b>& <b>Maddix</b></br>
-                    Remixer: <b>Blackpitch</b>& <b>K Miruz</b>
-
-                </div>
-            </a>
-
-            <a class="next" href="others.html">Next ❯</a>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-    </body>
+</body>
 
 </html>
