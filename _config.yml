@@ -1,5 +1,4 @@
 title: K Miruz
-source: docs/
 destination: _sites/
 plugins: 
   - jekyll-feed
