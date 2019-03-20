@@ -10,11 +10,11 @@ bundle exec jekyll serve
 
 
 **If you don't have Ruby** 
-> install from https://rubyinstaller.org/downloads/]
+> install from https://rubyinstaller.org/downloads/
 
 
 **and then you will need to install bundle** 
 
 ```bash
-gem bundle
+gem install bundle
 ```
