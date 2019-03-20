@@ -3,5 +3,3 @@ source: docs/
 destination: _sites/
 plugins: 
   - jekyll-feed
-
-theme: jekyll-theme-architect
