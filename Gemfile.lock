@@ -1,62 +1,79 @@
-PATH
-  remote: vendor/gems/decima-ruby-0.1.0
-  specs:
-    decima-ruby (0.1.0)
-      addressable (~> 2.3)
-      httparty (~> 0.13)
+
 
 GEM
   remote: https://rubygems.org/
   specs:
-    nokogiri (1.6.7.1)
-      mini_portile2 (~> 2.0.0.rc2)
-    nokogumbo (1.4.7)
-      nokogiri
-    rails (~> 4.2.7.1)
-      actionmailer (~> 4.2.7.1)
-      actionpack (~> 4.2.7.1)
-      actionview (~> 4.2.7.1)
-      activejob (~> 4.2.7.1)
-      activemodel (~> 4.2.7.1)
-      activerecord (~> 4.2.7.1)
-      activesupport (~> 4.2.7.1)
-      bundler (>= 1.3.0, < 2.0)
-      railties (~> 4.2.7.1)
-      sprockets-rails
-    rails-deprecated_sanitizer (1.0.3)
-      activesupport (>= 4.2.0.alpha)
-    rails-dom-testing (1.0.7)
-      activesupport (>= 4.2.0.beta, < 5.0)
-      nokogiri (~> 1.8.2)
-      rails-deprecated_sanitizer (>= 1.0.1)
-    rails-html-sanitizer (~> 1.0.4)
-      loofah (~> 2.2.1)
-    rspec-rails (3.3.2)
-      actionpack (>= 3.0, < 4.3)
-      activesupport (>= 3.0, < 4.3)
-      railties (>= 3.0, < 4.3)
-      rspec-core (~> 3.3.0)
-      rspec-expectations (~> 3.3.0)
-      rspec-mocks (~> 3.3.0)
-      rspec-support (~> 3.3.0)
-    rubyzip (1.2.1)
-    xpath (2.0.0)
-      nokogiri (~> 1.3)
+    addressable (2.5.2)
+      public_suffix (>= 2.0.2, < 4.0)
+    colorator (1.1.0)
+    concurrent-ruby (1.0.5)
+    em-websocket (0.5.1)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0.6.0)
+    eventmachine (1.2.7)
+    ffi (1.9.25)
+    forwardable-extended (2.6.0)
+    http_parser.rb (0.6.0)
+    i18n (0.9.5)
+      concurrent-ruby (~> 1.0)
+    jekyll (3.7.3)
+      addressable (~> 2.4)
+      colorator (~> 1.0)
+      em-websocket (~> 0.5)
+      i18n (~> 0.7)
+      jekyll-sass-converter (~> 1.0)
+      jekyll-watch (~> 2.0)
+      kramdown (~> 1.14)
+      liquid (~> 4.0)
+      mercenary (~> 0.3.3)
+      pathutil (~> 0.9)
+      rouge (>= 1.7, < 4)
+      safe_yaml (~> 1.0)
+    jekyll-archives (2.1.1)
+      jekyll (>= 2.4)
+    jekyll-feed (0.10.0)
+      jekyll (~> 3.3)
+    jekyll-include-cache (0.1.0)
+      jekyll (~> 3.3)
+    jekyll-redirect-from (0.14.0)
+      jekyll (~> 3.3)
+    jekyll-sass-converter (1.5.2)
+      sass (~> 3.4)
+    jekyll-watch (2.0.0)
+      listen (~> 3.0)
+    kramdown (1.17.0)
+    liquid (4.0.0)
+    listen (3.1.5)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
+      ruby_dep (~> 1.2)
+    mercenary (0.3.6)
+    pathutil (0.16.1)
+      forwardable-extended (~> 2.6)
+    public_suffix (2.0.5)
+    rb-fsevent (0.10.3)
+    rb-inotify (0.9.10)
+      ffi (>= 0.5.0, < 2)
+    rouge (2.2.1)
+    ruby_dep (1.5.0)
+    safe_yaml (1.0.4)
+    sass (3.5.7)
+      sass-listen (~> 4.0.0)
+    sass-listen (4.0.0)
+      rb-fsevent (~> 0.9, >= 0.9.4)
+      rb-inotify (~> 0.9, >= 0.9.7)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  dotenv-rails
-  factory_girl_rails
-  jbuilder (~> 2.0)
-  jquery-rails
-  pry-byebug (~> 1.3.3)
-  pry-rails
-  pry-remote
-  pry-stack_explorer
-  rack-mini-profiler
-  rails (~> 4.2.7.1)
+  jekyll (~> 3.7.3)
+  jekyll-archives (~> 2.1)
+  jekyll-feed (~> 0.10)
+  jekyll-include-cache (~> 0.1)
+  jekyll-redirect-from (~> 0.14)
+  jekyll-sass-converter (~> 1.5)
+  tzinfo-data
 
 BUNDLED WITH
-   1.11.2
+   1.16.4
